@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Logicos</title>
+</head>
+<body>
+
+    <h1>Operadores Logicos</h1>
+    
+    <script>
+        // Pedir primeira nota1
+        var nota1 = parseFloat(prompt('Digite sua primeira nota'));
+        var faltas1 = parseInt(prompt('Digite o valor de faltas do 1º Bimestre'));
+
+        // Pedir segunda nota2
+        var nota2 = parseFloat(prompt('Digite sua segunda nota'));
+        var faltas2 = parseInt(prompt('Digite o valor de faltas do 2º Bimestre'));
+
+
+        // Pedir segunda nota3
+        var nota3 = parseFloat(prompt('Digite sua terceira nota'));
+        var faltas3 = parseInt(prompt('Digite o valor de faltas do 3º Bimestre'));
+
+        // Pedir segunda nota4
+        var nota4 = parseFloat(prompt('Digite sua quarta nota'));
+        var faltas4 = parseInt(prompt('Digite o valor de faltas do 4º Bimestre'));
+
+        // Calcular a media
+        var media = (nota1 + nota2 + nota3 + nota4) / 4;
+        var mediaFaltas = (faltas1 + faltas2 + faltas3 + faltas4) / 100 * 80;
+
+        // Verificar SE nota1 = 0, nota2  = 0 OU media >= 0
+        if(media < 7 && mediaFaltas > 25){
+            alert('Reprovado com média: ' + media + ' e faltas ' + mediaFaltas);
+        } else {
+        if(media < 7 && mediaFaltas < 25){
+            alert('Ficou de recuperação com média: ' + media + ' e faltas ' + mediaFaltas);
+        }
+            alert('Aprovado com média: ' + media + ' e faltas: ' + mediaFaltas);
+        }
+
+    </script>
+
+</body>
+</html>

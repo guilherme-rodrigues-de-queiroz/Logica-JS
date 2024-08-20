@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada Funções</title>
+</head>
+<body>
+    <!-- Mundo HTML -->
+    <button onclick="calcularAreaAlert()">Calcular Area Alert</button>
+    <button onclick="calcularAreaSaida()">Calcular Area Saída</button>
+
+    <div id="saida"></div>
+
+    <script>
+
+        function calcularAreaAlert(){
+            var largura = parseFloat(prompt('Digite a largura do retângulo'));
+            var altura = parseFloat(prompt('Digite a altura do retângulo'));
+            var area = calcularArea(largura, altura);
+            alert(`A área do retângulo é: ${area}`);
+        }
+
+        function calcularAreaSaida(){
+            var largura = parseFloat(prompt('Digite a largura do retângulo'));
+            var altura = parseFloat(prompt('Digite a altura do retângulo'));
+            var area = calcularArea(largura, altura);
+            document.querySelector('#saida').innerHTML = `O valor da área é ${area}`;
+        }
+
+        function calcularArea(l, a){
+            return l*a;
+        }
+
+    </script>
+</body>
+</html>

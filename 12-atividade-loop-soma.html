@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade soma</title>
+</head>
+<body>
+    <script>
+        var indice = 1;
+        var soma = 0;
+
+        // usuário deve digitar 5 números e trazer a soma ao final
+        while(indice <= 5){
+            var valor = parseInt(prompt('Digite o ' + indice + 'º valor'));
+            soma = valor + soma;
+            indice++;
+        }
+        document.write('A soma dos 5 valores é: ' + soma);
+
+    </script>
+
+</body>
+</html>

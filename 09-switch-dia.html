@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+
+    <h1>Switch para data</h1>
+    
+    <script>
+        // Pegar as informações de datas usando o new Date
+        const d = new Date();
+
+        // Salvar o valor do dia em uma variavel chamada dia
+        let dia = d.getDay(); //1 a 31
+        
+        // Salvar a horas
+        let hora = d.getHours(); //0 a 23 horas
+
+        if(hora > 5 && hora <= 11){
+        } else {
+        }
+        if(hora > 12 && hora <= 16){
+            alert('Olá, Boa tarde!')
+        } else {
+            alert('Olá, Boa noite!')
+        }
+
+        // Salvar a variavel chamada ano
+        let ano = d.getFullYear(); //o ano em YYYY
+
+        // Salvar o mês
+        const mes = d.getMonth(); //Mês 0 a 11
+
+        nomeMes = new Array(11);
+        nomeMes[0] = "Janeiro";
+        nomeMes[1] = "Fevereiro";
+        nomeMes[2] = "Março";
+        nomeMes[3] = "Abril";
+        nomeMes[4] = "Maio";
+        nomeMes[5] = "Junho";
+        nomeMes[6] = "Julho";
+        nomeMes[7] = "Agosto";
+        nomeMes[8] = "Setembro";
+        nomeMes[9] = "Outubro";
+        nomeMes[10] = "Novembro";
+        nomeMes[11] = "Dezembro";
+
+        // Usar switch para trazer os dias das semanas
+        switch (dia) {
+            case 0:
+                alert('Olá, ! Hoje é Domingo, dia ' + dia + ' de ' + (nomeMes[mes]) + ' de ' + ano);  
+                break;
+            case 1:
+                alert('Olá, ! Hoje é Segunda-Feira, dia ' + dia + ' de ' + (nomeMes[mes]) + ' de ' + ano);
+                break;
+            case 2:
+                alert('Olá, ! Hoje é Terça-Feira, dia ' + dia + ' de ' + (nomeMes[mes]) + ' de ' + ano);
+                break;
+            case 3:
+                alert('Olá, ! Hoje é Quarta-Feira, dia ' + dia + ' de ' + (nomeMes[mes]) + ' de ' + ano);
+                break;
+            case 4:
+                alert('Olá, ! Hoje é Quinta-Feira, dia ' + dia + ' de ' + (nomeMes[mes]) + ' de ' + ano);
+                break;
+            case 5:
+                alert('Olá, ! Hoje é Sexta-Feira, dia ' + dia + ' de ' + (nomeMes[mes]) + ' de ' + ano);
+                break;
+            case 6:
+                alert('Olá, ! Hoje é Sábado, dia ' + dia + ' de ' + (nomeMes[mes]) + ' de ' + ano);
+                break;
+            default:
+                break;
+        }
+
+    </script>
+</body>
+</html>

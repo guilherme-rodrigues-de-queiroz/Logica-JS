@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrado dos pares</title>
+</head>
+
+<body>
+    <script>
+        var inicio = parseInt(prompt('digite o valor inicial'));
+        var final = parseInt(prompt('Digite o valor final'));
+
+        //Fazer um loop q me traga o quadrado apenas dos pares
+        for (var i = inicio; i <= final; i++) {
+            //bloco de instrução
+            if (i % 2 == 0) {
+                document.write('o quadrado de ' + i + 'é ' + (i ** 2) + '<br>');
+            }
+        }
+    </script>
+</body>
+
+</html>

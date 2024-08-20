@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+
+<body>
+    <h1>Date alert</h1>
+    <script>
+        const d = new Date();
+        let year = d.getFullYear();
+        const months = ["January", "February", "March", "Abril", "May", "June", "July", "August", "September", "October", "November", "December"];
+        let month = months[d.getMonth()];
+        const days = ["Domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sabado"];
+        let day = days[d.getDay()];
+        let date = d.getDate();
+        let hours = d.getHours();
+        if (hours > 0 && hours <= 12) {
+            alert(`Bom dia! Hoje é ${day}, 0${date} de ${month} de ${year}`);
+        } else {
+            if (hours > 12 && hours <= 18) {
+                alert('Boa tarde');
+            } else {
+                alert('Boa noite');
+            }
+        }   
+    </script>
+</body>
+
+</html>

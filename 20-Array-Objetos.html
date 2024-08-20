@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="output"></div>
+
+    <script>
+        // array literal
+        let produtos = [
+            {'nome': 'caneta', 'preco': 3.5, 'estoque': 30},
+            {'nome': 'lápis', 'preco': 2.5, 'estoque': 50},
+            {'nome': 'borracha', 'preco': 3, 'estoque': 60}
+        ]
+
+        // declarando a variável onde vou receber as iformações
+        let mensagem = '';
+
+        for (let i = 0; i < produtos.length; i++){
+            console.log(produtos[i].nome);
+            mensagem += '<h3>Produto: ' + produtos[i].nome + '</h3>';
+            mensagem += '<p> Preço R$' + produtos[i].preco + '<p>';
+            mensagem += '<p> Estoque' + produtos[i].estoque + '<p>';
+            mensagem += '<hr>';
+        }
+
+        document.querySelector("#output").innerHTML = mensagem;
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando</title>
+</head>
+<body>
+    <h3>Calculadora</h3>
+    <p>Faça seus calculos como divisão, subtração, soma e multiplicação</p>
+
+    <button onclick="gerarTabuada()">Gerar Multiplicação</button>
+    <button onclick="gerarSoma()">Gerar Soma</button>
+    <button onclick="gerarSubtracao()">Gerar Subtração</button>
+    <button onclick="gerarDivisao()">Gerar Divisão</button>
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+    <div id="saida"></div>
+
+    <script>
+        let n = parseFloat(prompt('Digite um valor inicial'));
+
+    // declarando variaveis
+    let cont = 0
+    let saida = document.querySelector('#saida');
+
+    // mostrar vaor digitado na div ID saida
+    saida.innerHTML = n;
+
+    // função multiplicação
+    function gerarTabuada(){
+        cont = parseFloat(prompt('Digite um valor'))
+        n *= cont;
+        saida.innerHTML = n;
+    }
+
+    // função soma
+    function gerarSoma(){
+        cont = parseFloat(prompt('Digite um valor'))
+        n = n + cont;
+        saida.innerHTML = n;
+    }
+
+    // função subtração
+    function gerarSubtracao(){
+        cont = parseFloat(prompt('Digite um valor'))
+        n -= cont;
+        saida.innerHTML = n;
+    }
+
+    // função divisão
+    function gerarDivisao(){
+        cont = parseFloat(prompt('Digite um valor'))
+        n /= cont;
+        saida.innerHTML = n;
+    }
+
+    // Limpar tabuada
+    function limparTabuada(){
+        mensagem = '';
+        saida.innerHTML = mensagem;
+    }
+
+
+    </script>
+    
+    <img src="https://cdn.leroymerlin.com.br/products/placa_decorativos_mdf_30x33_joia_like_joinha_1570446829_17eb_600x600.jpg" width="50" weight="50"></img>
+
+</body>
+</html>

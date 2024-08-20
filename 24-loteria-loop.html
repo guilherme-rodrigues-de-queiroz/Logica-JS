@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loteria usando for ou while</title>
+</head>
+
+<body>
+    <!-- Criar botão-->
+    <button onclick="sortear()"> sortear</button>
+    <div id="saida"></div>
+
+    <script>
+        function sortear() {
+            return Math.floor(Math.random() * 60)
+        }
+
+        // forma literal
+        let sorteados = [];
+        var msg = '';
+
+        // o for não seria a forma ideal para o nosso loop
+
+        // while
+        while (sorteados.length < 6) {
+
+            let sorteado = sortear()
+
+            if (sorteados.indexOf(sorteado) === -1) {
+                sorteados[sorteados.length] = sorteado;
+
+            }
+
+        }
+
+        document.querySelector('#saida').innerHTML = msg;
+        msg += ('o sorteado é ' + sorteados + '<br>')
+
+        console.log(sorteados.length, sorteados)
+    </script>
+</body>
+
+</html>

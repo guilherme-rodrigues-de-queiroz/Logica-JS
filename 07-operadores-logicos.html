@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Logicos</title>
+</head>
+<body>
+
+    <h1>Operadores Logicos</h1>
+    
+    <script>
+        // Pedir primeira nota1
+        var nota1 = parseFloat(prompt('Digite sua primeira nota'));
+
+        // Pedir segunda nota2
+        var nota2 = parseFloat(prompt('Digite sua segunda nota'));
+
+        // Calcular a media
+        var media = (nota1 + nota2) / 2;
+
+        // Verificar SE nota1 = 0, nota2  = 0 OU media >= 0
+        if(nota1 == 0 || nota2 == 0 || media < 6){
+            alert('Reprovado');
+        } else {
+            alert('Aprovado com média: ' + media);
+        }
+
+    </script>
+
+</body>
+</html>

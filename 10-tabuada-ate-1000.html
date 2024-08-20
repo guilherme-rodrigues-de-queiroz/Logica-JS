@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <h1>Tabuada de 1 até 1000</h1>
+
+    <script>
+        // pedir um número para a tabuada
+        let n = parseInt(prompt('Digite um número para a tabuada:'));
+        // repetir até a condição for verdadeira - neste caso até mil
+        let cont = 1;
+        while(cont<=1000){
+            // este bloco vai se repetir até indice for menor ou igual a 1000
+            document.write('A tabuada de' + n + 'X ' + cont +'= ' + n*cont + '<br>')
+            cont++;
+        }
+    </script>
+</body>
+</html>

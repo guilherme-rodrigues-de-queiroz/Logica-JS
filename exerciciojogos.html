@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos</title>
+</head>
+<body>
+
+    <h1>Jogos</h1>
+    
+    <script>
+        // Jogador 1 transformar em number
+        var jogador1 = parseInt(prompt('Digite um número de 0 a 1'));
+
+        // Jogador 2 transformar em number
+        var jogador2 = parseInt(prompt('Digite um número de 0 a 1'));
+
+        // Se forem iguais mostrar empate
+        if(jogador1 == jogador2){
+            alert('Jogo empatou!');
+        } else {
+            var aleatorio = parseInt(Math.random()*2);
+            alert('aleatorio vale ' + aleatorio)
+            if ((aleatorio == 0 && jogador1 < jogador2) || (aleatorio == 1 && jogador1 > jogador2)) {
+                alert('Ganhou jogador 1');
+            } else {
+                alert('Ganhou jogador 2');
+            }
+        }
+    </script>
+
+</body>
+</html>
